@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    
+    <div class="top">
+        <h1>TIC TAC TOE</h1>
+    </div>
+
+    <div class="play-space">
+      
+      <div class="play-space-top">
+        <div class="name-container active-player" id="x-player-container">
+          <div>X</div>
+          <div id="x-player"></div>
+        </div>
+        <div class="name-container" id="o-player-container">
+          <div>O</div>
+          <div id="o-player"></div>
+        </div>
+      </div>
+
+      <div class="play-grid">
+        <div class="grid" id="grid0"></div>
+        <div class="grid" id="grid1"></div>
+        <div class="grid" id="grid2"></div>
+        <div class="grid" id="grid3"></div>
+        <div class="grid" id="grid4"></div>
+        <div class="grid" id="grid5"></div>
+        <div class="grid" id="grid6"></div>
+        <div class="grid" id="grid7"></div>
+        <div class="grid" id="grid8"></div>
+      </div>
+      
+      <div class="forms dark centered results-container">
+        <div id="results"></div>
+        <button class="submit-button" id="play-again">PLAY AGAIN?</button>
+      </div>
+
+    </div>
+    
+    <form class="form-container forms dark centered">
+      <h1 class="form-title">ADD PLAYERS</h1>
+      <label for="player-1">PLAYER 1</label>
+      <input class="text-input" type="text" id="player-1">
+      <label for="player-2">PLAYER 2</label>
+      <input class="text-input" type="text" id="player-2">
+      <label for="ai-opponent">AI OPPONENT?</label>
+      <input class="checkbox-input" type="checkbox" id="ai-opponent">
+      <button class="submit-button dark" id="lets-play" type="button">
+            LET'S PLAY!</button>
+    </form>
+
+    <div id="page-mask"></div>
+
+  </body>
+  <script src="script.js"></script>
+</html>

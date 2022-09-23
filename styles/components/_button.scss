@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+button {
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 100px;
+    color: white;
+    background-color: $dark-blue-gray;
+}
+
+.light {
+    color: $dark-blue-gray;
+    background-color: white;
+}
+
+.x-button {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 15px;
+    transform: rotate(45deg);
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+button:active {
+    background-color: rgb(179, 187, 214);
+}
+
+button:disabled {
+    background-color: rgba($dark-blue-gray, 0.3);
+}
+
+.submit-button {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+}

@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Fonts
+$text-font-stack: 'Montserrat', 'roboto', 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 
+    'Helvetica', 'Arial', sans-serif !default;
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 
+    'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Colors
+/// Custom Colors
+$light-grey: rgb(237, 237, 237) !default;
+$mid-grey: rgb(153, 153, 153) !default;
+$dark-grey: rgb(68, 68, 68) !default;
+$light-teal: rgb(228, 238, 237);
+$dark-blue-gray: rgb(63, 67, 88);
+$light-blue-gray: rgb(104, 107, 119);
+$text-color: rgb(34, 34, 34) !default;
+$brand-color: rgb(23, 0, 229) !default;
+/// Color Usage
+$default-background: $light-teal;
+
+/// Lengths and Widths
+$max-width: 1180px !default;
+$max-para-width: 600px;
+$min-para-width: 300px;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 860px,
+  'large': 1024px,
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+$base-url: '/assets/' !default;
+
